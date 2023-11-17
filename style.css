@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -172,7 +172,10 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 footer {
   color: white;
   background-image: linear-gradient(
@@ -213,17 +216,26 @@ footer a {
   opacity: 0.7;
 }
 
-@media (max-width: 960px) {
-  header {
+@media (max-width: 600px) {
+ 
+ .container {
+  max-width {
+    width: 100%;
+  }
+ } header {
     padding: 60px 0;
+    text-align: center;
+  }
+  .grid-2-columns > div {
+    width: 100%
   }
 
   header h1 {
-    font-size: 48px;
+    font-size: 24px;
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   header h3 {
